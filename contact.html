@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+#table{
+border-color:azure;
+width:70%;
+text-align: left;
+
+}
+
+th{
+    background-color:mediumturquoise;
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+}
+
+        </style>
+    </head>
+    <body>
+<table id="table">
+    <th>Contact Name</th>
+    <th>Mobile Number</th>
+    <th>Type</th>
+    <th>Favourites</th>
+</table>
+    </body>
+    <script>
+var contactList = JSON.parse(localStorage.getItem('contactList'));
+
+contactList.forEach(contactData => {
+    var names = document.createElement('td')
+    td = contactList.name;
+});
+
+table.append(names,);
+    </script>
+</html>
